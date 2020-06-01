@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import cn.lhj.mvcproject.filter.BaseFilter;
-import sun.java2d.pipe.RenderQueue;
+
 
 public class IsLoginFilter extends BaseFilter{
 	@Override
