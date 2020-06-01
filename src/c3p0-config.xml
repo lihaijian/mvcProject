@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+  <named-config name="oracle"> 
+  	<property name="driverClass">oracle.jdbc.driver.OracleDriver</property>
+  	<property name="jdbcUrl">jdbc:oracle:thin:@localhost:1521:mvcocl</property>
+  	<property name="user">yhgl</property>
+  	<property name="password">yhgl</property>
+  
+  	<!--当数据库连接不足的时候，向数据库申请的连接数量  -->
+    <property name="acquireIncrement">5</property>
+    
+    <!--初始化数据库连接池的数量  -->
+    <property name="initialPoolSize">10</property>
+    
+	<!--连接池中最少的数据库连接数的数量-->
+    <property name="minPoolSize">10</property>
+    
+    <!--连接池中最大的数据库连接数的数量-->
+    <property name="maxPoolSize">50</property>
+
+    <!-- 数据库连接池中可以维护的statement的最大数量 -->
+    <property name="maxStatements">5</property> 
+    
+    <!-- 每个连接可以同时使用的statement的最大数量  -->
+    <property name="maxStatementsPerConnection">5</property>
+
+  </named-config>
+</c3p0-config>
